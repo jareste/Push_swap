@@ -6,7 +6,7 @@
 /*   By: jareste- <jareste-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 01:43:32 by jareste-          #+#    #+#             */
-/*   Updated: 2023/05/29 14:04:58 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/05/29 21:49:48 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,6 @@ int	pa(int *a, int *b, int len);
 int	pb(int *a, int *b, int len);
 int	rr(int *a, int *b, int len, char r_a_b);
 int	rrr(int *a, int *b, int len, char r_a_b);
+int	ft_atoi(const char *str);
 
 #endif
