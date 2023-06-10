@@ -6,7 +6,7 @@
 /*   By: jareste- <jareste-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 13:57:23 by jareste-          #+#    #+#             */
-/*   Updated: 2023/05/29 21:51:15 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/05/30 02:24:14 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,8 @@ int	ft_atoi(const char *str)
 		result = (result * 10) + (str[i] - '0');
 		i++;
 	}
+	if (str[i] != '\0')
+		return (0);
 	if (neg == 1)
 		return (-result);
 	return (result);

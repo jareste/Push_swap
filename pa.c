@@ -6,11 +6,46 @@
 /*   By: jareste- <jareste-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 01:52:43 by jareste-          #+#    #+#             */
-/*   Updated: 2023/05/29 13:49:43 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/06/09 02:01:53 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+void	swap(int *a1, int *a2)
+{
+	int	tmp;
+
+	tmp = *a1;
+	*a1 = *a2;
+	*a2 = tmp;
+}
+
+void	pa(int *a, int *b, int len)
+{
+	int	i;
+
+	i = len;
+	while (i > 0)
+	{
+		swap(&a[i], &a[i - 1]);
+		i--;
+	}
+	a[0] = b[0];
+	i = 0;
+	while (i <= len)
+	{
+		b[i] = b[i + 1];
+		i++;
+	}
+	write(1, "pa\n", 3);
+}
+/*
+
+
+
+
+
 
 int	pa(int *a, int *b, int len)
 {
@@ -37,7 +72,7 @@ int	pa(int *a, int *b, int len)
 	aux = NULL;
 	write(1, "pa\n", 3);
 	return (1);
-}
+}*/
 /*
 int main(void)
 {

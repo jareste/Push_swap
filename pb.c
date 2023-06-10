@@ -6,11 +6,43 @@
 /*   By: jareste- <jareste-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 02:41:02 by jareste-          #+#    #+#             */
-/*   Updated: 2023/05/29 13:59:16 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/05/30 02:08:36 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
+static void	swap(int *b1, int *b2)
+{
+	int	tmp;
+
+	tmp = *b1;
+	*b1 = *b2;
+	*b2 = tmp;
+}
+
+void	pb(int *a, int *b, int len)
+{
+	int	i;
+
+	i = len;
+	while (i > 0)
+	{
+		swap(&b[i], &b[i - 1]);
+		i--;
+	}
+	b[0] = a[0];
+	i = 0;
+	while (i <= len)
+	{
+		a[i] = a[i + 1];
+		i++;
+	}
+	write(1, "pb\n", 3);
+}
+/*
+
+
 
 int	pb(int *a, int *b, int len)
 {
@@ -37,7 +69,7 @@ int	pb(int *a, int *b, int len)
 	aux = NULL;
 	write(1, "pb\n", 3);
 	return (1);
-}
+}*/
 /*
 int main(void)
 {
