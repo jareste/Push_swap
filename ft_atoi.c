@@ -6,45 +6,36 @@
 /*   By: jareste- <jareste-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 13:57:23 by jareste-          #+#    #+#             */
-/*   Updated: 2023/05/30 02:24:14 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/06/11 04:16:57 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static int	ft_isspace(int c)
-{
-	if (c == ' ' || c == '\n' || c == '	'
-		|| c == '\t' || c == '\v' || c == '\f' || c == '\r')
-		return (1);
-	return (0);
-}
-
-int	ft_atoi(const char *str)
+int	ft_atoi(const char *str, int *a)
 {
 	int	i;
 	int	neg;
-	int	result;
+	long long int	result;
 
 	i = 0;
 	result = 0;
 	neg = 0;
-	while (ft_isspace(str[i]))
-		i++;
 	if (str[i] == '-')
-	{
 		neg = 1;
-		i++;
-	}
-	else if (str[i] == '+')
+	if (str[i] == '+' || str[i] == '-')
 		i++;
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		result = (result * 10) + (str[i] - '0');
 		i++;
+		if (result > ((long long int)2147483647 + 1) && neg == 1)
+			ft_free(a);
+		if (result > 2147483647 && neg == 0)
+			ft_free(a);
 	}
 	if (str[i] != '\0')
-		return (0);
+		ft_free(a);
 	if (neg == 1)
 		return (-result);
 	return (result);

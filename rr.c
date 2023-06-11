@@ -6,85 +6,54 @@
 /*   By: jareste- <jareste-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 03:00:53 by jareste-          #+#    #+#             */
-/*   Updated: 2023/05/29 14:05:24 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/06/11 01:08:37 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static int	ra(int *a, int len)
+void	ra(int *a, int len)
 {
-	int	*aux;
-	int	tmp;
+	int	i;
 
-	aux = malloc(sizeof(int) * len);
-	if (!aux)
-		return (0);
-	tmp = 0;
-	while (tmp < len)
+	i = 0;
+	while (i + 1 < len)
 	{
-		aux[tmp] = a[tmp];
-		tmp++;
+		swap(&a[i], &a[i + 1]);
+		i++;
 	}
-	tmp = 0;
-	while (tmp < (len - 1))
-	{
-		a[tmp] = aux[tmp + 1];
-		tmp++;
-	}
-	a[len - 1] = aux[0];
-	free(aux);
-	aux = NULL;
-	return (1);
 }
 
-static int	rb(int *b, int len)
+void	rb(int *b, int len)
 {
-	int	*aux;
-	int	tmp;
+	int	i;
 
-	aux = malloc(sizeof(int) * len);
-	if (!aux)
-		return (0);
-	tmp = 0;
-	while (tmp < len)
+	i = 0;
+	while (i + 1 < len)
 	{
-		aux[tmp] = b[tmp];
-		tmp++;
+		swap(&b[i], &b[i + 1]);
+		i++;
 	}
-	tmp = 0;
-	while (tmp < (len - 1))
-	{
-		b[tmp] = aux[tmp + 1];
-		tmp++;
-	}
-	b[len - 1] = aux[0];
-	free(aux);
-	aux = NULL;
-	return (1);
 }
 
-int	rr(int *a, int *b, int len, char r_a_b)
+void	rr(int *a, int *b, int len, char r_a_b)
 {
 	if (r_a_b == 'a')
 	{
-		if (!ra(a, len))
-			return (0);
+		ra(a, len);
 		write(1, "ra\n", 3);
 	}
 	else if (r_a_b == 'b')
 	{
-		if (!rb(b, len))
-			return (0);
+		rb(b, len);
 		write(1, "rb\n", 3);
 	}
 	else if (r_a_b == 'r')
 	{
-		if (!ra(a, len) || !rb(b, len))
-			return (0);
+		ra(a, len);
+		rb(a, len);
 		write(1, "rr\n", 3);
 	}
-	return (1);
 }
 /*
 int main(void)

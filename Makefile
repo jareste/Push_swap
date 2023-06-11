@@ -22,15 +22,20 @@ DARK_GREEN =	\033[38;2;75;179;82m
 DARK_YELLOW =	\033[38;5;143m
 
 SRCS = array3.c \
-       ft_atoi.c \
+	   array4.c \
+	   array5.c \
+	   array20.c \
+	   array100.c \
+	   ft_atoi.c \
        pa.c \
        pb.c \
        push_swap.c \
        rr.c \
        rrr.c \
-       ss.c
+       ss.c \
+	   set_index.c \
+	   errors.c 
 
-INCLUDE = pushswap.h
 
 
 CC = gcc

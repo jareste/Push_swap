@@ -6,20 +6,11 @@
 /*   By: jareste- <jareste-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 02:41:02 by jareste-          #+#    #+#             */
-/*   Updated: 2023/05/30 02:08:36 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/06/10 18:47:21 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-static void	swap(int *b1, int *b2)
-{
-	int	tmp;
-
-	tmp = *b1;
-	*b1 = *b2;
-	*b2 = tmp;
-}
 
 void	pb(int *a, int *b, int len)
 {
