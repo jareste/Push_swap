@@ -6,7 +6,7 @@
 /*   By: jareste- <jareste-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/15 19:13:59 by jareste-          #+#    #+#             */
-/*   Updated: 2023/06/17 01:25:03 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/06/17 02:07:23 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,6 +87,7 @@ void	solve(t_list *l)
 
 	aux = l->len;
 	aux_exit = 0;
+	l->memsolv = 0;
 	while (l->lenb > 0)
 	{
 		i = 0;

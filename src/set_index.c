@@ -6,7 +6,7 @@
 /*   By: jareste- <jareste-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/11 01:22:10 by jareste-          #+#    #+#             */
-/*   Updated: 2023/06/17 01:24:54 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/06/17 02:07:39 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,9 @@ void	set_index(t_list *l)
 	int	i;
 	int	j;
 	int	new_index;
-//	int	*aux;
 
 	i = -1;
-/*	aux = malloc(sizeof(int) * l->len);
-*/	while (i++ < l->len)
+	while (i++ < l->len)
 		l->saux[i] = l->sa[i];
 	i = 0;
 	while (i < l->len)

@@ -6,7 +6,7 @@
 /*   By: jareste- <jareste-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 01:43:06 by jareste-          #+#    #+#             */
-/*   Updated: 2023/06/17 01:24:30 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/06/17 02:07:26 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,8 +62,6 @@ int	init_list(int argc, t_list *l)
 	l -> len = argc - 1;
 	l -> lena = argc - 1;
 	l -> lenb = 0;
-	l -> atoierror = 0;
-	l -> memsolv = 0;
 	return (1);
 }
 

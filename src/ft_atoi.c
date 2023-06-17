@@ -6,7 +6,7 @@
 /*   By: jareste- <jareste-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 13:57:23 by jareste-          #+#    #+#             */
-/*   Updated: 2023/06/17 01:23:48 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/06/17 02:06:14 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ int	ft_atoi(const char *str, t_list *l)
 	i = 0;
 	result = 0;
 	neg = 0;
+	l->atoierror = 0;
 	if (str[i] == '-')
 		neg = 1;
 	if (str[i] == '+' || str[i] == '-')
@@ -34,8 +35,6 @@ int	ft_atoi(const char *str, t_list *l)
 		if ((result > 2147483647 && neg == 0))
 			l->atoierror = 1;
 	}
-	if (str[i] != '\0')
-		l->atoierror = 1;
 	if (neg == 1)
 		return (-result);
 	return (result);
