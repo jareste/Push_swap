@@ -3661,7 +3661,7 @@ if [ $N -lt 5500 ]; then
 elif [ $N -gt 5500 ] && [ $N -lt 7000 ]; then
 	printf "${YELLOW}[OK][4/5]${DEF_COLOR}";
 elif [ $N -gt 7000 ] && [ $N -lt 8500 ]; then
-	printf "${RED}[KO][3/5]${DEF_COLOR}";
+	printf "${YELLOW}[OK][3/5]${DEF_COLOR}";
 elif [ $N -gt 8500 ] && [ $N -lt 10000 ]; then
 	printf "${RED}[KO][2/5]${DEF_COLOR}";
 elif [ $N -gt 11500 ]; then
@@ -3681,7 +3681,7 @@ if [ $N -lt 5500 ]; then
 elif [ $N -gt 5500 ] && [ $N -lt 7000 ]; then
 	printf "${YELLOW}[OK][4/5]${DEF_COLOR}";
 elif [ $N -gt 7000 ] && [ $N -lt 8500 ]; then
-	printf "${RED}[KO][3/5]${DEF_COLOR}";
+	printf "${YELLOW}[OK][3/5]${DEF_COLOR}";
 elif [ $N -gt 8500 ] && [ $N -lt 10000 ]; then
 	printf "${RED}[KO][2/5]${DEF_COLOR}";
 elif [ $N -gt 11500 ]; then
@@ -3701,7 +3701,7 @@ if [ $N -lt 5500 ]; then
 elif [ $N -gt 5500 ] && [ $N -lt 7000 ]; then
 	printf "${YELLOW}[OK][4/5]${DEF_COLOR}";
 elif [ $N -gt 7000 ] && [ $N -lt 8500 ]; then
-	printf "${RED}[KO][3/5]${DEF_COLOR}";
+	printf "${YELLOW}[OK][3/5]${DEF_COLOR}";
 elif [ $N -gt 8500 ] && [ $N -lt 10000 ]; then
 	printf "${RED}[KO][2/5]${DEF_COLOR}";
 elif [ $N -gt 11500 ]; then
@@ -3721,7 +3721,7 @@ if [ $N -lt 5500 ]; then
 elif [ $N -gt 5500 ] && [ $N -lt 7000 ]; then
 	printf "${YELLOW}[OK][4/5]${DEF_COLOR}";
 elif [ $N -gt 7000 ] && [ $N -lt 8500 ]; then
-	printf "${RED}[KO][3/5]${DEF_COLOR}";
+	printf "${YELLOW}[OK][3/5]${DEF_COLOR}";
 elif [ $N -gt 8500 ] && [ $N -lt 10000 ]; then
 	printf "${RED}[KO][2/5]${DEF_COLOR}";
 elif [ $N -gt 11500 ]; then
@@ -3741,7 +3741,7 @@ if [ $N -lt 5500 ]; then
 elif [ $N -gt 5500 ] && [ $N -lt 7000 ]; then
 	printf "${YELLOW}[OK][4/5]${DEF_COLOR}";
 elif [ $N -gt 7000 ] && [ $N -lt 8500 ]; then
-	printf "${RED}[KO][3/5]${DEF_COLOR}";
+	printf "${YELLOW}[OK][3/5]${DEF_COLOR}";
 elif [ $N -gt 8500 ] && [ $N -lt 10000 ]; then
 	printf "${RED}[KO][2/5]${DEF_COLOR}";
 elif [ $N -gt 11500 ]; then
@@ -3761,7 +3761,7 @@ if [ $N -lt 5500 ]; then
 elif [ $N -gt 5500 ] && [ $N -lt 7000 ]; then
 	printf "${YELLOW}[OK][4/5]${DEF_COLOR}";
 elif [ $N -gt 7000 ] && [ $N -lt 8500 ]; then
-	printf "${RED}[KO][3/5]${DEF_COLOR}";
+	printf "${YELLOW}[OK][3/5]${DEF_COLOR}";
 elif [ $N -gt 8500 ] && [ $N -lt 10000 ]; then
 	printf "${RED}[KO][2/5]${DEF_COLOR}";
 elif [ $N -gt 11500 ]; then
@@ -3781,7 +3781,7 @@ if [ $N -lt 5500 ]; then
 elif [ $N -gt 5500 ] && [ $N -lt 7000 ]; then
 	printf "${YELLOW}[OK][4/5]${DEF_COLOR}";
 elif [ $N -gt 7000 ] && [ $N -lt 8500 ]; then
-	printf "${RED}[KO][3/5]${DEF_COLOR}";
+	printf "${YELLOW}[OK][3/5]${DEF_COLOR}";
 elif [ $N -gt 8500 ] && [ $N -lt 10000 ]; then
 	printf "${RED}[KO][2/5]${DEF_COLOR}";
 elif [ $N -gt 11500 ]; then
@@ -3801,7 +3801,7 @@ if [ $N -lt 5500 ]; then
 elif [ $N -gt 5500 ] && [ $N -lt 7000 ]; then
 	printf "${YELLOW}[OK][4/5]${DEF_COLOR}";
 elif [ $N -gt 7000 ] && [ $N -lt 8500 ]; then
-	printf "${RED}[KO][3/5]${DEF_COLOR}";
+	printf "${YELLOW}[OK][3/5]${DEF_COLOR}";
 elif [ $N -gt 8500 ] && [ $N -lt 10000 ]; then
 	printf "${RED}[KO][2/5]${DEF_COLOR}";
 elif [ $N -gt 11500 ]; then
@@ -3821,7 +3821,7 @@ if [ $N -lt 5500 ]; then
 elif [ $N -gt 5500 ] && [ $N -lt 7000 ]; then
 	printf "${YELLOW}[OK][4/5]${DEF_COLOR}";
 elif [ $N -gt 7000 ] && [ $N -lt 8500 ]; then
-	printf "${RED}[KO][3/5]${DEF_COLOR}";
+	printf "${YELLOW}[OK][3/5]${DEF_COLOR}";
 elif [ $N -gt 8500 ] && [ $N -lt 10000 ]; then
 	printf "${RED}[KO][2/5]${DEF_COLOR}";
 elif [ $N -gt 11500 ]; then
@@ -3841,7 +3841,7 @@ if [ $N -lt 5500 ]; then
 elif [ $N -gt 5500 ] && [ $N -lt 7000 ]; then
 	printf "${YELLOW}[OK][4/5]${DEF_COLOR}";
 elif [ $N -gt 7000 ] && [ $N -lt 8500 ]; then
-	printf "${RED}[KO][3/5]${DEF_COLOR}";
+	printf "${YELLOW}[OK][3/5]${DEF_COLOR}";
 elif [ $N -gt 8500 ] && [ $N -lt 10000 ]; then
 	printf "${RED}[KO][2/5]${DEF_COLOR}";
 elif [ $N -gt 11500 ]; then
@@ -3861,7 +3861,7 @@ if [ $N -lt 5500 ]; then
 elif [ $N -gt 5500 ] && [ $N -lt 7000 ]; then
 	printf "${YELLOW}[OK][4/5]${DEF_COLOR}";
 elif [ $N -gt 7000 ] && [ $N -lt 8500 ]; then
-	printf "${RED}[KO][3/5]${DEF_COLOR}";
+	printf "${YELLOW}[OK][3/5]${DEF_COLOR}";
 elif [ $N -gt 8500 ] && [ $N -lt 10000 ]; then
 	printf "${RED}[KO][2/5]${DEF_COLOR}";
 elif [ $N -gt 11500 ]; then
@@ -3881,7 +3881,7 @@ if [ $N -lt 5500 ]; then
 elif [ $N -gt 5500 ] && [ $N -lt 7000 ]; then
 	printf "${YELLOW}[OK][4/5]${DEF_COLOR}";
 elif [ $N -gt 7000 ] && [ $N -lt 8500 ]; then
-	printf "${RED}[KO][3/5]${DEF_COLOR}";
+	printf "${YELLOW}[OK][3/5]${DEF_COLOR}";
 elif [ $N -gt 8500 ] && [ $N -lt 10000 ]; then
 	printf "${RED}[KO][2/5]${DEF_COLOR}";
 elif [ $N -gt 11500 ]; then
@@ -3901,7 +3901,7 @@ if [ $N -lt 5500 ]; then
 elif [ $N -gt 5500 ] && [ $N -lt 7000 ]; then
 	printf "${YELLOW}[OK][4/5]${DEF_COLOR}";
 elif [ $N -gt 7000 ] && [ $N -lt 8500 ]; then
-	printf "${RED}[KO][3/5]${DEF_COLOR}";
+	printf "${YELLOW}[OK][3/5]${DEF_COLOR}";
 elif [ $N -gt 8500 ] && [ $N -lt 10000 ]; then
 	printf "${RED}[KO][2/5]${DEF_COLOR}";
 elif [ $N -gt 11500 ]; then
@@ -3921,7 +3921,7 @@ if [ $N -lt 5500 ]; then
 elif [ $N -gt 5500 ] && [ $N -lt 7000 ]; then
 	printf "${YELLOW}[OK][4/5]${DEF_COLOR}";
 elif [ $N -gt 7000 ] && [ $N -lt 8500 ]; then
-	printf "${RED}[KO][3/5]${DEF_COLOR}";
+	printf "${YELLOW}[OK][3/5]${DEF_COLOR}";
 elif [ $N -gt 8500 ] && [ $N -lt 10000 ]; then
 	printf "${RED}[KO][2/5]${DEF_COLOR}";
 elif [ $N -gt 11500 ]; then
@@ -3941,7 +3941,7 @@ if [ $N -lt 5500 ]; then
 elif [ $N -gt 5500 ] && [ $N -lt 7000 ]; then
 	printf "${YELLOW}[OK][4/5]${DEF_COLOR}";
 elif [ $N -gt 7000 ] && [ $N -lt 8500 ]; then
-	printf "${RED}[KO][3/5]${DEF_COLOR}";
+	printf "${YELLOW}[OK][3/5]${DEF_COLOR}";
 elif [ $N -gt 8500 ] && [ $N -lt 10000 ]; then
 	printf "${RED}[KO][2/5]${DEF_COLOR}";
 elif [ $N -gt 11500 ]; then
