@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: jareste- <jareste-@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/06/17 04:03:39 by jareste-          #+#    #+#              #
-#    Updated: 2023/06/17 04:05:45 by jareste-         ###   ########.fr        #
+#    Created: 2023/06/21 11:31:31 by jareste-          #+#    #+#              #
+#    Updated: 2023/06/21 11:46:30 by jareste-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,20 +35,23 @@ RM = rm -f
 CFLAGS = -Wall -Wextra -Werror 
 
 %.o: %.c
-			${CC} ${CFLAGS} -c $< -o $@ 
+		@${CC} ${CFLAGS} -c $< -o $@	
 
 OBJS = ${SRCS:.c=.o}
 
 all:	${NAME}
 
 ${NAME}: ${OBJS} 
-	${CC} ${SRCS} -o ${NAME}
+	@${CC} ${SRCS} -o ${NAME}
+	@echo "EVERYTHING DONE✌️   "
 
 clean:
-			${RM} ${OBJS}
+			@${RM} ${OBJS}
+			@echo "OBJECTS REMOVED😭   "
 
 fclean: 
-			${RM} ${OBJS} ${NAME}
+			@${RM} ${OBJS} ${NAME}
+			@echo "EVERYTHING REMOVED😭 "
 
 re: fclean all
 

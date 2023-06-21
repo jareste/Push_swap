@@ -6,7 +6,7 @@
 /*   By: jareste- <jareste-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/15 19:13:59 by jareste-          #+#    #+#             */
-/*   Updated: 2023/06/17 04:06:41 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/06/17 02:07:23 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,8 +82,10 @@ static int	aux_rrr(t_list *l, int aux_exit, int i)
 void	solve(t_list *l)
 {
 	int	i;
+	int	aux;
 	int	aux_exit;
 
+	aux = l->len;
 	aux_exit = 0;
 	l->memsolv = 0;
 	while (l->lenb > 0)
