@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   split_chunks.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jareste- <jareste-@student.42barcel>       +#+  +:+       +#+        */
+/*   By: jareste- <jareste-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/15 19:13:59 by jareste-          #+#    #+#             */
-/*   Updated: 2023/06/17 02:07:23 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/09/24 21:26:43 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,7 +96,7 @@ void	solve(t_list *l)
 		if (i <= (l->lenb / 2))
 			aux_exit = aux_rr(l, aux_exit, i);
 		else if (i > (l->lenb / 2))
-			aux_rrr(l, aux_exit, i);
+			aux_exit = aux_rrr(l, aux_exit, i);
 		pa(l);
 		if (l->memsolv == 1)
 		{

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jareste- <jareste-@student.42barcel>       +#+  +:+       +#+        */
+/*   By: jareste- <jareste-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 01:43:06 by jareste-          #+#    #+#             */
-/*   Updated: 2023/06/17 02:07:26 by jareste-         ###   ########.fr       */
+/*   Updated: 2023/09/24 21:23:31 by jareste-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,14 +80,14 @@ void	push_swap(t_list *l)
 		split_chunks(l, 2);
 		solve(l);
 	}
-	if (l->len > 20)
+	if (l->len > 20 && l->len < 150)
 	{
 		split_chunks(l, 4);
 		solve(l);
 	}
-	if (l->len > 150)
+	if (l->len >= 150)
 	{
-		split_chunks(l, 10);
+		split_chunks(l, 9);
 		solve(l);
 	}
 }
