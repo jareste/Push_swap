@@ -1,0 +1,4 @@
+*.sh linguist-language=Ignore
+*.bash linguist-language=Ignore
+*.zsh linguist-language=Ignore
+*.shell linguist-language=Ignore
